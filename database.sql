@@ -1,0 +1,9 @@
+CREATE DATABASE astra;
+USE astra;
+
+CREATE TABLE history (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    command VARCHAR(100),
+    success BOOLEAN,
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
